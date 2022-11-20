@@ -4,9 +4,7 @@ import Basket_Navlinks_mobile from "../Basket_Navlinks_mobile";
 import Logo_large from "../Logo/Logo_large";
 import SearchBar from "../SearchBar";
 
-export interface INavbarProps {}
-
-export function Navbar(props: INavbarProps) {
+export function Navbar() {
   return (
     <Box
       component={"nav"}

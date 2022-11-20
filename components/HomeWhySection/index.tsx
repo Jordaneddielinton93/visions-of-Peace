@@ -2,7 +2,6 @@ import { Box } from "@mui/system";
 import * as React from "react";
 import { Silkbg } from "../Silkbg";
 import silkbg from "../../public/images/home/silkbg2.png";
-import { Height } from "@mui/icons-material";
 import Image from "next/image";
 import angelImage2 from "../../public/images/home/heroimage2.png";
 import SpinningPlanet from "../svgs/SpinningPlanet";

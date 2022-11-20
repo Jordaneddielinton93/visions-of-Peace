@@ -1,7 +1,5 @@
 import { Button } from "@mui/material";
 import * as React from "react";
-import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { Box } from "@mui/system";
 import { BasketSvg } from "../svgs/Basket";

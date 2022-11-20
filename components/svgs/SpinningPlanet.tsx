@@ -1,5 +1,4 @@
 import { Box } from "@mui/system";
-import Styles from "./styles.module.css";
 export default function SpinningPlanet() {
   return (
     <Box
