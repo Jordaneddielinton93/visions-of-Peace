@@ -2,6 +2,8 @@ import { Box } from "@mui/system";
 import Head from "next/head";
 import * as React from "react";
 import Carousel1 from "../components/Carousel/Carousel1";
+import { ImageGallary } from "../components/ImageGallary";
+import { StoreCards } from "../components/StoreCards";
 import { WhyChooseMe } from "../components/WhyChooseMe";
 
 export default function Store() {
@@ -17,6 +19,8 @@ export default function Store() {
       </Head>
       <Carousel1 />
       <WhyChooseMe />
+      <StoreCards />
+      <ImageGallary />
     </Box>
   );
 }

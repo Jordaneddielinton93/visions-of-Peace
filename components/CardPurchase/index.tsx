@@ -21,8 +21,10 @@ export function CardPurchase({ title, text, price }: ICardPurchaseProps) {
       sx={{
         minHeight: { xs: "350px", sm: "350px", md: "350px", lg: "350px" },
         minWidth: { xs: "220px", sm: "220px", md: "250px", lg: "250px" },
+        maxHeight: { xs: "350px", sm: "350px", md: "350px", lg: "350px" },
+        maxWidth: { xs: "220px", sm: "220px", md: "250px", lg: "250px" },
         boxShadow:
-          "rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px",
+          " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;",
         borderRadius: "15px 15px 0px 15px ",
         border: "solid 2px ",
         borderColor: "primary.main",
