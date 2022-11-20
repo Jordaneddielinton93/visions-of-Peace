@@ -66,21 +66,24 @@ export default function TBasket_Navlinks_mobile() {
       <Divider />
       <List>
         {[
-          { text: "About", icon: <InfoIcon /> },
-          { text: "Store", icon: <StoreIcon /> },
-          { text: "Contact", icon: <ContactMailIcon /> },
-          { text: "Faqs", icon: <LiveHelpIcon /> },
-        ].map(({ icon, text }, index) => (
-          <Link key={index} href={"/" + text}>
-            {" "}
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemIcon>{icon}</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>{" "}
-          </Link>
-        ))}
+          { text: "about", icon: <InfoIcon /> },
+          { text: "store", icon: <StoreIcon /> },
+          { text: "contact", icon: <ContactMailIcon /> },
+          { text: "faqs", icon: <LiveHelpIcon /> },
+        ].map(({ icon, text }, index) => {
+          console.log("/" + text);
+          return (
+            <Link key={index} href={"/" + text}>
+              {" "}
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>{icon}</ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>{" "}
+            </Link>
+          );
+        })}
       </List>
     </Box>
   );
