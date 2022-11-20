@@ -14,6 +14,7 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import StoreIcon from "@mui/icons-material/Store";
+import Link from "next/link";
 type Anchor = "top" | "left" | "bottom" | "right";
 
 export default function TBasket_Navlinks_mobile() {
@@ -70,12 +71,15 @@ export default function TBasket_Navlinks_mobile() {
           { text: "Contact", icon: <ContactMailIcon /> },
           { text: "Faqs", icon: <LiveHelpIcon /> },
         ].map(({ icon, text }, index) => (
-          <ListItem key={index} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>{icon}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
+          <Link key={index} href={"/" + text}>
+            {" "}
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemIcon>{icon}</ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>{" "}
+          </Link>
         ))}
       </List>
     </Box>
