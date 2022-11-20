@@ -1,24 +1,26 @@
 import { Box } from "@mui/system";
 import Image from "next/image";
 import * as React from "react";
-import silkbg from "../../public/images/home/silkbg.png";
+
 export interface ISilkbgProps {
   right: string;
   left: string;
   top: any;
+  img: any;
 }
 
-export function Silkbg({ right, left, top }: ISilkbgProps) {
+export function Silkbg({ right, left, top, img }: ISilkbgProps) {
   return (
     <Box
       sx={{
         position: "absolute",
+        display: "flex",
         right: right,
         left: left,
         top: top,
       }}
     >
-      <Image src={silkbg} alt="silk image background" />
+      <Image src={img} alt="silk image background" />
     </Box>
   );
 }

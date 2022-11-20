@@ -1,6 +1,9 @@
 import { Box } from "@mui/material";
 import Head from "next/head";
+import { CardPurchaseSection } from "../components/CardPurchaseSection";
 import { HomeHeroSection } from "../components/HomeHeroSection";
+import { HomeWhySection } from "../components/HomeWhySection";
+import { ImageGallary } from "../components/ImageGallary";
 import { WhyChooseMe } from "../components/WhyChooseMe";
 
 export default function Home() {
@@ -13,6 +16,9 @@ export default function Home() {
       </Head>
       <HomeHeroSection />
       <WhyChooseMe />
+      <CardPurchaseSection />
+      <HomeWhySection />
+      <ImageGallary />
     </Box>
   );
 }

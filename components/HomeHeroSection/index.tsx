@@ -5,6 +5,7 @@ import { HomeHeroSectionLeft } from "../HomeHeroSectionLeft";
 import { Silkbg } from "../Silkbg";
 import SpinningPlanet from "../svgs/SpinningPlanet";
 import angelImage from "../../public/images/home/heroimage.png";
+import silkbg from "../../public/images/home/silkbg.png";
 
 export interface IHomeHeroSectionProps {}
 
@@ -54,6 +55,7 @@ export function HomeHeroSection(props: IHomeHeroSectionProps) {
 
         <SpinningPlanet />
         <Silkbg
+          img={silkbg}
           top={{ xs: "0px", sm: "-80px", md: "-80px", lg: "-80px" }}
           left=""
           right="0px"

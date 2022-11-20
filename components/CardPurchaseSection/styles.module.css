@@ -1,0 +1,15 @@
+.carousel_slider{
+    animation: slider 30s alternate linear infinite;
+}
+@keyframes slider {
+    0%{
+        transform: translateX(-300px);
+    }
+    50%{
+        transform: translateX(120px);
+    }
+    100%{
+        transform: translateX(-300px);
+    }
+}
+

@@ -52,3 +52,95 @@ export const whyChooseMe = [
     text: "Sense of purpose, hope & meaning.",
   },
 ];
+
+export const cardArray = [
+  {
+    img: "",
+    title: "Boujee",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo consequatur officia veritatis, quasi laboriosam neque quam inventore perspiciatis quibusdam ex atque culpa explicabo natus ab reiciendis illo.",
+    price: "$2.00",
+  },
+  {
+    img: "",
+    title: "Boujee",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo consequatur officia veritatis, quasi laboriosam neque quam inventore perspiciatis quibusdam ex atque culpa explicabo natus ab reiciendis illo.",
+    price: "$2.00",
+  },
+  {
+    img: "",
+    title: "Boujee",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo consequatur officia veritatis, quasi laboriosam neque quam inventore perspiciatis quibusdam ex atque culpa explicabo natus ab reiciendis illo.",
+    price: "$2.00",
+  },
+  {
+    img: "",
+    title: "Boujee",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo consequatur officia veritatis, quasi laboriosam neque quam inventore perspiciatis quibusdam ex atque culpa explicabo natus ab reiciendis illo.",
+    price: "$2.00",
+  },
+  {
+    img: "",
+    title: "Boujee",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo consequatur officia veritatis, quasi laboriosam neque quam inventore perspiciatis quibusdam ex atque culpa explicabo natus ab reiciendis illo.",
+    price: "$2.00",
+  },
+];
+
+import onawall from "../../public/images/gallary/wallangel.png";
+import blackWhite from "../../public/images/gallary/blackwhite.jpeg";
+import chair from "../../public/images/gallary/chair.jpeg";
+import forrest from "../../public/images/gallary/forresy.jpeg";
+import pose from "../../public/images/gallary/pose.jpeg";
+import sing from "../../public/images/gallary/sing.jpeg";
+
+export const gallarylist = [
+  {
+    img: blackWhite,
+    title: "Bed",
+  },
+  {
+    img: onawall,
+    title: "Books",
+  },
+  {
+    img: chair,
+    title: "Sink",
+  },
+  {
+    img: forrest,
+    title: "Kitchen",
+  },
+  {
+    img: pose,
+    title: "Blinds",
+  },
+  {
+    img: pose,
+    title: "Chairs",
+  },
+
+  {
+    img: blackWhite,
+    title: "Bed",
+  },
+  {
+    img: onawall,
+    title: "Books",
+  },
+  {
+    img: chair,
+    title: "Sink",
+  },
+  {
+    img: forrest,
+    title: "Kitchen",
+  },
+  {
+    img: pose,
+    title: "Blinds",
+  },
+  {
+    img: pose,
+    title: "Chairs",
+  },
+];

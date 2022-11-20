@@ -60,12 +60,8 @@ export default function SearchBar() {
   );
 }
 const top100Films = [
-  { title: "The Shawshank Redemption" },
-  { title: "The Godfather" },
-  { title: "The Godfather: Part II" },
-  { title: "The Dark Knight" },
-  { title: "12 Angry Men" },
-  { title: "Schindler's List" },
-  { title: "Pulp Fiction" },
-  { title: "Monty Python and the Holy Grail" },
+  { title: "Boujee Lash's" },
+  { title: "Wispy Goddess Lash's" },
+  { title: "Sweetie Lash's" },
+  { title: "Saphire Lash's" },
 ];
