@@ -27,11 +27,16 @@ export function ImageGallary(props: IImageGallaryProps) {
           className={styles.ImageList}
         >
           {gallarylist.map((item, index) => {
-            let randomNumb = Math.floor(Math.random() * (550 - 350 + 1) + 350);
-
+            // let randomNumb = Math.floor(Math.random() * (550 - 350 + 1) + 350);
+            let randomNumb =
+              index % 2 == 0
+                ? 340 + index * index * index
+                : index % 3 == 0
+                ? 550
+                : 250;
             return (
               <ImageListItem
-                key={randomNumb + index}
+                key={randomNumb + index + item.title}
                 sx={{
                   border: "outset 3px ",
                   borderColor: "primary.main",

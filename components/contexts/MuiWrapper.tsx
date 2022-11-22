@@ -5,7 +5,7 @@ export interface ICreateMuiThemeProps {
   children: React.ReactNode;
 }
 
-export function CreateMuiTheme(props: ICreateMuiThemeProps) {
+export default function MuiWrapper(props: ICreateMuiThemeProps) {
   const theme = createTheme({
     palette: {
       primary: {

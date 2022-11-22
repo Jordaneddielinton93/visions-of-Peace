@@ -1,15 +1,21 @@
-import { Box } from "@mui/material";
+import { Box, Skeleton } from "@mui/material";
 import * as React from "react";
 import { OrderNow } from "../Buttons/OrderNow";
 import { CardPurchase } from "../CardPurchase";
-import { cardArray } from "../constants/constants";
+
 import { Silkbg } from "../Silkbg";
 import styles from "./styles.module.css";
 import silkbg from "../../public/images/home/silkbg.png";
 
+import fetchAllData from "../hooks/fetchAllData";
+import { CardSkeletons } from "../CardPurchase/Skeleton";
+import { useQuery } from "@tanstack/react-query";
 export interface ICardPurchaseSectionProps {}
 
-export function CardPurchaseSection(props: ICardPurchaseSectionProps) {
+export function CardPurchaseSection({}: ICardPurchaseSectionProps) {
+  const { data, status } = useQuery(["store"], fetchAllData);
+  console.log(data, status, "heeerrree");
+
   return (
     <Box
       sx={{
@@ -38,16 +44,26 @@ export function CardPurchaseSection(props: ICardPurchaseSectionProps) {
             margin: "90px 0",
           }}
         >
-          {cardArray.map(({ img, title, text, price }) => {
-            return (
-              <CardPurchase
-                key={title}
-                title={title}
-                text={text}
-                price={price}
-              />
-            );
-          })}
+          {status === "success" ? (
+            (console.log("how"),
+            data.map(
+              ({ image, title, description, price, id }: any, index: any) => {
+                return (
+                  index < 8 && (
+                    <CardPurchase
+                      img={image}
+                      key={title + index}
+                      title={title}
+                      text={description}
+                      price={price}
+                    />
+                  )
+                );
+              }
+            ))
+          ) : (
+            <CardSkeletons />
+          )}
         </Box>
       </Box>
       <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
