@@ -1,34 +1,15 @@
 import { Button, Paper } from "@mui/material";
 import { Box } from "@mui/system";
 import * as React from "react";
+import { memo } from "react";
 import styles from "./styles.module.css";
 
 import Carousel from "react-material-ui-carousel";
+
+import { items } from "../../constants/constants";
 export interface ICarousel1Props {}
 
-export default function Carousel1(props: ICarousel1Props) {
-  var items = [
-    {
-      name: "Tigers eye ",
-      description: "Probably the most random thing you have ever seen!",
-      img: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
-    },
-    {
-      name: "Citrine",
-      img: "https://images.unsplash.com/photo-1495191712857-c3a9aa54f482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-      description: "Hello World!",
-    },
-    {
-      name: "Turquoise",
-      img: "https://images.unsplash.com/photo-1495396310650-64841eacfa3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-      description: "goodbye World!",
-    },
-    {
-      name: "Sapphire",
-      img: "https://images.unsplash.com/photo-1514646544754-9d1bbea5ccc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80",
-      description: "goodbye World!",
-    },
-  ];
+function Carousel1(props: ICarousel1Props) {
   return (
     <Carousel>
       {items.map((item, i) => (
@@ -37,9 +18,8 @@ export default function Carousel1(props: ICarousel1Props) {
     </Carousel>
   );
 }
-
+export default memo(Carousel1);
 function Item(props: any) {
-  console.log(props);
   return (
     <Paper
       sx={{

@@ -71,7 +71,6 @@ export default function TBasket_Navlinks_mobile() {
           { text: "contact", icon: <ContactMailIcon /> },
           { text: "faqs", icon: <LiveHelpIcon /> },
         ].map(({ icon, text }, index) => {
-          console.log("/" + text);
           return (
             <Link key={index} href={"/" + text}>
               {" "}

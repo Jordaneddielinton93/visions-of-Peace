@@ -8,7 +8,6 @@ export interface IBasketButtonProps {
 }
 
 export function BasketButton({ handleClick }: IBasketButtonProps) {
-  let basket: number = 1;
   return (
     <Button
       onClick={handleClick}

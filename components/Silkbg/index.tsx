@@ -18,6 +18,7 @@ export function Silkbg({ right, left, top, img }: ISilkbgProps) {
         right: right,
         left: left,
         top: top,
+        zIndex: "1",
       }}
     >
       <Image src={img} alt="silk image background" />

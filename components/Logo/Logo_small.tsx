@@ -117,8 +117,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.6797 15.004) rotate(-125.444) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint1_radial_853_5116"
@@ -128,8 +128,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.6797 15.004) rotate(-125.444) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint2_radial_853_5116"
@@ -139,8 +139,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.6797 15.004) rotate(-125.444) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint3_radial_853_5116"
@@ -150,8 +150,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.6797 15.004) rotate(-125.444) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint4_radial_853_5116"
@@ -161,8 +161,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.9107 18.7777) rotate(-52.4521) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint5_radial_853_5116"
@@ -172,8 +172,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.9107 18.7777) rotate(-52.4521) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint6_radial_853_5116"
@@ -183,8 +183,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.9107 18.7777) rotate(-52.4521) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint7_radial_853_5116"
@@ -194,8 +194,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(20.9107 18.7777) rotate(-52.4521) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint8_radial_853_5116"
@@ -205,8 +205,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(17.5214 20.2712) rotate(18.7894) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint9_radial_853_5116"
@@ -216,8 +216,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(17.5214 20.2712) rotate(18.7894) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint10_radial_853_5116"
@@ -227,8 +227,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(17.5214 20.2712) rotate(18.7894) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint11_radial_853_5116"
@@ -238,8 +238,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(17.5214 20.2712) rotate(18.7894) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint12_radial_853_5116"
@@ -249,8 +249,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(15.1285 17.345) rotate(91.7817) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint13_radial_853_5116"
@@ -260,8 +260,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(15.1285 17.345) rotate(91.7817) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint14_radial_853_5116"
@@ -271,8 +271,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(15.1285 17.345) rotate(91.7817) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint15_radial_853_5116"
@@ -282,8 +282,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(15.1285 17.345) rotate(91.7817) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint16_radial_853_5116"
@@ -293,8 +293,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(17.0677 14.1861) rotate(163.307) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint17_radial_853_5116"
@@ -304,8 +304,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(17.0677 14.1861) rotate(163.307) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint18_radial_853_5116"
@@ -315,8 +315,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(17.0677 14.1861) rotate(163.307) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
           <radialGradient
             id="paint19_radial_853_5116"
@@ -326,8 +326,8 @@ export default function Logo_small(props: ILogoProps) {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(17.0677 14.1861) rotate(163.307) scale(18.2446 16.2789)"
           >
-            <stop stop-color="#614749" />
-            <stop offset="1" stop-color="#A98672" />
+            <stop stopColor="#614749" />
+            <stop offset="1" stopColor="#A98672" />
           </radialGradient>
         </defs>
       </svg>
