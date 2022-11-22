@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
 import * as React from "react";
-import Basket_Navlinks_mobile from "../Basket_Navlinks_mobile";
+import Basket_and_Navlinks from "../Basket_and_Navlinks";
 import Logo_large from "../Logo/Logo_large";
 import SearchBar from "../SearchBar";
 
@@ -19,7 +19,7 @@ export function Navbar() {
     >
       <Logo_large />
       <SearchBar />
-      <Basket_Navlinks_mobile />
+      <Basket_and_Navlinks />
     </Box>
   );
 }
