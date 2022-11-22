@@ -7,7 +7,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { BasketButton } from "../Buttons";
+import BasketButton from "../Buttons/BasketButton";
 import InfoIcon from "@mui/icons-material/Info";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
@@ -17,7 +17,7 @@ import StoreIcon from "@mui/icons-material/Store";
 import Link from "next/link";
 type Anchor = "top" | "left" | "bottom" | "right";
 
-export default function TBasket_Navlinks_mobile() {
+export default function Basket_and_Navlinks() {
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -38,12 +38,12 @@ export default function TBasket_Navlinks_mobile() {
 
       setState({ ...state, [anchor]: open });
     };
-
+  let arrayOfavailablePages: any = ["store"];
   const list = (anchor: Anchor) => (
     <Box
       sx={{
         width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
-        backgroundColor: "background.default",
+        backgroundColor: "white",
         height: "100%",
       }}
       role="presentation"
@@ -54,14 +54,40 @@ export default function TBasket_Navlinks_mobile() {
         {[
           { text: "Account", icon: <AccountCircleIcon /> },
           { text: "Basket", icon: <LocalGroceryStoreIcon /> },
-        ].map(({ icon, text }, index) => (
-          <ListItem key={index} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>{icon}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        ].map(({ icon, text }, index) => {
+          return arrayOfavailablePages.includes(text) ? (
+            <Link key={index} href={"/" + text}>
+              <ListItem key={index} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>{icon}</ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+            </Link>
+          ) : (
+            <ListItem
+              key={index}
+              disablePadding
+              sx={{
+                textDecoration: "none",
+                color: "red",
+                cursor: "help",
+              }}
+            >
+              <ListItemButton>
+                <ListItemIcon
+                  sx={{
+                    textDecoration: "none",
+                    color: "red",
+                  }}
+                >
+                  {icon}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          );
+        })}
       </List>
       <Divider />
       <List>
@@ -71,16 +97,48 @@ export default function TBasket_Navlinks_mobile() {
           { text: "contact", icon: <ContactMailIcon /> },
           { text: "faqs", icon: <LiveHelpIcon /> },
         ].map(({ icon, text }, index) => {
-          return (
+          return arrayOfavailablePages.includes(text) ? (
             <Link key={index} href={"/" + text}>
-              {" "}
               <ListItem disablePadding>
                 <ListItemButton>
-                  <ListItemIcon>{icon}</ListItemIcon>
-                  <ListItemText primary={text} />
+                  <ListItemIcon
+                    sx={{
+                      textDecoration: "none",
+                      color: "primary.main",
+                    }}
+                  >
+                    {icon}
+                  </ListItemIcon>
+                  <ListItemText
+                    sx={{
+                      textDecoration: "none",
+                      color: "primary.main",
+                    }}
+                    primary={text}
+                  />
                 </ListItemButton>
-              </ListItem>{" "}
+              </ListItem>
             </Link>
+          ) : (
+            <ListItem disablePadding>
+              <ListItemButton sx={{ cursor: "help" }}>
+                <ListItemIcon
+                  sx={{
+                    textDecoration: "none",
+                    color: "red",
+                  }}
+                >
+                  {icon}
+                </ListItemIcon>
+                <ListItemText
+                  sx={{
+                    textDecoration: "none",
+                    color: "red",
+                  }}
+                  primary={text}
+                />
+              </ListItemButton>
+            </ListItem>
           );
         })}
       </List>

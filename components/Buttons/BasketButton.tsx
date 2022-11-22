@@ -7,7 +7,7 @@ export interface IBasketButtonProps {
   handleClick: any;
 }
 
-export function BasketButton({ handleClick }: IBasketButtonProps) {
+export default function BasketButton({ handleClick }: IBasketButtonProps) {
   return (
     <Button
       onClick={handleClick}

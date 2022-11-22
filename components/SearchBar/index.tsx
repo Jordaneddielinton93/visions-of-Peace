@@ -17,24 +17,32 @@ const GroupHeader = styled("div")(({ theme }) => ({
 const GroupItems = styled("ul")({
   padding: 0,
 });
+import { useQuery } from "@tanstack/react-query";
+import fetchAllData from "../hooks/fetchAllData";
+import { useRouter } from "next/router";
 
 export default function SearchBar() {
-  const options = top100Films.map((option) => {
-    const firstLetter = option.title[0].toUpperCase();
-    return {
-      firstLetter: /[0-9]/.test(firstLetter) ? "0-9" : firstLetter,
-      ...option,
-    };
-  });
+  const { data, status } = useQuery(["store"], fetchAllData);
+  const router = useRouter();
+  const options = !data
+    ? []
+    : data.map((option: any) => {
+        const firstLetter = option.title[0].toUpperCase();
+        return {
+          firstLetter: /[0-9]/.test(firstLetter) ? "0-9" : firstLetter,
+          ...option,
+        };
+      });
 
   return (
     <Autocomplete
+      onChange={(e, newValue) => router.push(`/store/${newValue.id}`)}
       id="grouped-demo"
       options={options.sort(
-        (a, b) => -b.firstLetter.localeCompare(a.firstLetter)
+        (a: any, b: any) => -b.firstLetter.localeCompare(a.firstLetter)
       )}
-      groupBy={(option) => option.firstLetter}
-      getOptionLabel={(option) => option.title}
+      groupBy={(option: any) => option.firstLetter}
+      getOptionLabel={(option: any) => option.title}
       sx={{
         display: { xs: "none", sm: "none", md: "block", lg: "block" },
         width: 300,
@@ -59,9 +67,3 @@ export default function SearchBar() {
     />
   );
 }
-const top100Films = [
-  { title: "Boujee Lash's" },
-  { title: "Wispy Goddess Lash's" },
-  { title: "Sweetie Lash's" },
-  { title: "Saphire Lash's" },
-];

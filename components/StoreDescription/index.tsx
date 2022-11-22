@@ -25,6 +25,10 @@ export function StoreDescription({
 
   let [quantity, setQuantity] = useState(1);
 
+  useEffect(() => {
+    setQuantity(1);
+  }, [id]);
+
   function addToCart() {
     setBasket({ type: "addToBasket", payload: { quantity: quantity, id: id } });
   }
@@ -51,10 +55,13 @@ export function StoreDescription({
         {title}
       </Typography>
       <Typography
-        component={"h1"}
+        component={"h4"}
         sx={{
-          fontSize: "1rem",
+          fontSize: "0.8rem",
           fontWeight: "400",
+          maxHeight: "100px",
+          minHeight: "150px",
+          overflowY: "scroll",
         }}
       >
         {description}
