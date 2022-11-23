@@ -63,14 +63,20 @@ export default function StoreQuantityButton({ id }: IStoreQuantityButtonProps) {
         : ""}
       Quantity{" "}
       <QuantityButton
+        ariaName={"minus"}
         icon={<RemoveIcon />}
         handleClick={handleRemoveOneFromBasket}
       />
       <QuantityButton
+        ariaName="quantity"
         icon={found ? found.quantity : 0}
         handleClick={() => ""}
       />
-      <QuantityButton icon={<AddIcon />} handleClick={handleAddToBasket} />
+      <QuantityButton
+        icon={<AddIcon />}
+        handleClick={handleAddToBasket}
+        ariaName={"plus"}
+      />
     </Box>
   );
 }

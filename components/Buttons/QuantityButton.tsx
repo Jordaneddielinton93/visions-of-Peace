@@ -4,11 +4,17 @@ import * as React from "react";
 export interface IaddButtonProps {
   icon: React.ReactNode;
   handleClick: () => void;
+  ariaName: string;
 }
 
-export function QuantityButton({ icon, handleClick }: IaddButtonProps) {
+export function QuantityButton({
+  icon,
+  handleClick,
+  ariaName,
+}: IaddButtonProps) {
   return (
     <Button
+      aria-label={ariaName}
       onClick={handleClick}
       style={{
         maxWidth: "30px",
