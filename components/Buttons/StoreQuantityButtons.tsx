@@ -22,7 +22,7 @@ export default function StoreQuantityButton({ id }: IStoreQuantityButtonProps) {
   function handleRemoveOneFromBasket() {
     setBasket({ type: "removeOneFromBasket", id: id });
   }
-  console.log(showSuccessMsg);
+
   if (showSuccessMsg.length >= 1) {
     setTimeout(() => {
       let newArr = [...showSuccessMsg];
