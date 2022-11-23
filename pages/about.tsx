@@ -1,16 +1,15 @@
-import Head from "next/head";
-
 import { Box } from "@mui/material";
-
+import Head from "next/head";
+import * as React from "react";
 import { CardPurchaseSection } from "../components/CardPurchaseSection";
-import { HomeHeroSection } from "../components/HomeHeroSection";
 import { HomeWhySection } from "../components/HomeWhySection";
-import { ImageGallary } from "../components/ImageGallary";
 import { WhyChooseMe } from "../components/WhyChooseMe";
-export interface IAppProps {}
-export default function Home() {
+
+export interface IaboutProps {}
+
+export default function about(props: IaboutProps) {
   return (
-    <Box bgcolor={"background"}>
+    <Box>
       <Head>
         <title>visions-of-peace:Home</title>
         <meta
@@ -19,11 +18,9 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <HomeHeroSection />
+      <HomeWhySection main_title="About Me..?" />
       <WhyChooseMe />
       <CardPurchaseSection />
-      <HomeWhySection main_title="Why..?" />
-      <ImageGallary />
     </Box>
   );
 }

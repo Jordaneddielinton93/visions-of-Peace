@@ -1,4 +1,4 @@
-import { createContext, useReducer, useState } from "react";
+import { createContext, useReducer } from "react";
 import basketReducer, { initialState } from "../reducers/basketReducer";
 
 export interface IBasketWrapperProps {
@@ -7,7 +7,7 @@ export interface IBasketWrapperProps {
 
 export let BasketContextWrapper = createContext<any>([]);
 
-export function BasketWrapper({ children }: IBasketWrapperProps) {
+export default function BasketWrapper({ children }: IBasketWrapperProps) {
   let [basket, setBasket] = useReducer<any>(basketReducer, initialState);
   console.log(basket);
   return (

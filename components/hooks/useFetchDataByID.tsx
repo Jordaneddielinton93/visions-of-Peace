@@ -1,4 +1,3 @@
-import { Console } from "console";
 import { useQuery } from "@tanstack/react-query";
 import fetchAllData from "./fetchAllData";
 

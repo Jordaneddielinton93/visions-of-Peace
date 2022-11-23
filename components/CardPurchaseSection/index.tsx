@@ -1,4 +1,4 @@
-import { Box, Skeleton } from "@mui/material";
+import { Box } from "@mui/material";
 import * as React from "react";
 import { OrderNow } from "../Buttons/OrderNow";
 import { CardPurchase } from "../CardPurchase";
@@ -25,6 +25,7 @@ export function CardPurchaseSection({}: ICardPurchaseSectionProps) {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-evenly",
+        zIndex: "2",
       }}
     >
       <Silkbg top={"0%"} right="0px" left="" img={silkbg} />
@@ -34,6 +35,7 @@ export function CardPurchaseSection({}: ICardPurchaseSectionProps) {
           width: "100%",
           overflow: "hidden",
           padding: "0 40px",
+          zIndex: "2",
         }}
       >
         <Box

@@ -54,6 +54,7 @@ export default function StoreItemPage(data: any) {
         description={data.description}
         price={data.price}
       />
+
       <Silkbg img={silkbg} top="-80px" left="" right="0px" />
       <Link href={"/store"} style={{ margin: "60px 0", alignSelf: "center" }}>
         <Button

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { orange } from "@mui/material/colors";
+
 export interface ICreateMuiThemeProps {
   children: React.ReactNode;
 }

@@ -14,12 +14,12 @@ export default function BasketButton({ handleClick }: IBasketButtonProps) {
       color="secondary"
       variant="contained"
       sx={{
-        display: { xs: "flex", sm: "flex", md: "flex", lg: "flex" },
+        display: "flex",
         justifyContent: "space-evenly",
         alignItems: "center",
         borderRadius: "22px",
         zIndex: "2",
-        width: "148px",
+        width: { xs: "108px", sm: "148px", md: "148px", lg: "148px" },
       }}
     >
       <Box
@@ -34,7 +34,10 @@ export default function BasketButton({ handleClick }: IBasketButtonProps) {
       >
         pages
       </Box>
-      <MenuOpenIcon fontSize="small" />
+      <MenuOpenIcon
+        fontSize="small"
+        sx={{ display: { xs: "none", sm: "block", md: "block", lg: "block" } }}
+      />
       |
       <BasketSvg />
     </Button>

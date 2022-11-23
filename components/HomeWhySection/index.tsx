@@ -7,9 +7,11 @@ import angelImage2 from "../../public/images/home/heroimage2.png";
 import SpinningPlanet from "../svgs/SpinningPlanet";
 import { List, ListItem } from "@mui/material";
 import Brightness2RoundedIcon from "@mui/icons-material/Brightness2Rounded";
-export interface IHomeWhySectionProps {}
+export interface IHomeWhySectionProps {
+  main_title: string;
+}
 
-export function HomeWhySection(props: IHomeWhySectionProps) {
+export function HomeWhySection({ main_title }: IHomeWhySectionProps) {
   return (
     <Box
       sx={{
@@ -77,7 +79,7 @@ export function HomeWhySection(props: IHomeWhySectionProps) {
             },
           }}
         >
-          Why..?
+          {main_title}
         </Box>
         <Box
           component={"p"}

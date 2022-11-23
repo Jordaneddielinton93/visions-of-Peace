@@ -1,4 +1,4 @@
-import { Button, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import { Box } from "@mui/system";
 import * as React from "react";
 import { memo } from "react";
@@ -53,7 +53,6 @@ function Item(props: any) {
       </Box>
       <Box className={styles.gradient}></Box>
       <Box className={styles.gradient2}></Box>
-      <Button className="CheckButton">Check it out!</Button>
     </Paper>
   );
 }

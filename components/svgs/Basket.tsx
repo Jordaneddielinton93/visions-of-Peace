@@ -6,7 +6,6 @@ export interface IBasketSvgProps {}
 
 export function BasketSvg(props: IBasketSvgProps) {
   let { basket } = useContext(BasketContextWrapper);
-  console.log("this basket", basket);
 
   return (
     <Box
