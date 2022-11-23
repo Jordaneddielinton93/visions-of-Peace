@@ -38,7 +38,7 @@ export default function Basket_and_Navlinks() {
 
       setState({ ...state, [anchor]: open });
     };
-  let arrayOfavailablePages: any = ["store"];
+  let arrayOfavailablePages: any = ["store", "basket", "about"];
   const list = (anchor: Anchor) => (
     <Box
       sx={{
@@ -52,8 +52,8 @@ export default function Basket_and_Navlinks() {
     >
       <List>
         {[
-          { text: "Account", icon: <AccountCircleIcon /> },
-          { text: "Basket", icon: <LocalGroceryStoreIcon /> },
+          { text: "account", icon: <AccountCircleIcon /> },
+          { text: "basket", icon: <LocalGroceryStoreIcon /> },
         ].map(({ icon, text }, index) => {
           return arrayOfavailablePages.includes(text) ? (
             <Link key={index} href={"/" + text}>

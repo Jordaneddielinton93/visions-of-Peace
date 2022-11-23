@@ -1,12 +1,10 @@
-import { Alert, Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
-import { QuantityButton } from "../Buttons/QuantityButton";
-import AddIcon from "@mui/icons-material/Add";
-import RemoveIcon from "@mui/icons-material/Remove";
+import { useContext } from "react";
 
-import { useContext, useEffect, useState } from "react";
-import Image from "next/image";
 import { BasketContextWrapper } from "../contexts/BasketWrapper";
+import Link from "next/link";
+import StoreQuantityButton from "../Buttons/StoreQuantityButtons";
 
 export interface IStoreDescriptionProps {
   title: string;
@@ -21,17 +19,7 @@ export function StoreDescription({
   description,
   price,
 }: IStoreDescriptionProps) {
-  let { basket, setBasket } = useContext(BasketContextWrapper);
-
-  let [quantity, setQuantity] = useState(1);
-
-  useEffect(() => {
-    setQuantity(1);
-  }, [id]);
-
-  function addToCart() {
-    setBasket({ type: "addToBasket", payload: { quantity: quantity, id: id } });
-  }
+  let { basket } = useContext(BasketContextWrapper);
 
   return (
     <Box
@@ -81,30 +69,7 @@ export function StoreDescription({
       >
         £{price}
       </Box>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-
-          height: "32px",
-          width: "180px",
-        }}
-      >
-        Quantity{" "}
-        <QuantityButton
-          icon={<RemoveIcon />}
-          handleClick={() =>
-            quantity > 1 && setQuantity((prevNumb) => prevNumb - 1)
-          }
-        />
-        <QuantityButton icon={quantity} handleClick={() => ""} />
-        <QuantityButton
-          icon={<AddIcon />}
-          handleClick={() => setQuantity((prevNumb) => prevNumb + 1)}
-        />
-      </Box>
-
+      <StoreQuantityButton id={id} />
       <Box
         sx={{
           display: "flex",
@@ -113,27 +78,24 @@ export function StoreDescription({
           gap: "0px 8px",
         }}
       >
-        <Button
-          onClick={addToCart}
-          sx={{
-            width: "127px",
-            height: "100%",
-            border: "solid thin ",
-            borderColor: "primary.main ",
-          }}
-        >
-          Add To Cart
-        </Button>
-        <Button
-          sx={{
-            width: "127px",
-            height: "100%",
-            border: "solid thin ",
-            borderColor: "primary.main ",
-          }}
-        >
-          Go To Cart
-        </Button>
+        {basket.length ? (
+          <Link href={"/basket"} style={{ textDecoration: "none" }}>
+            <Button
+              variant="contained"
+              sx={{
+                width: "127px",
+                height: "100%",
+                border: "solid thin ",
+                borderColor: "primary.main ",
+                fontSize: "0.8rem",
+              }}
+            >
+              Go To Cart
+            </Button>
+          </Link>
+        ) : (
+          ""
+        )}
       </Box>
     </Box>
   );

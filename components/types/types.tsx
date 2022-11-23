@@ -1,6 +1,6 @@
 export type IinitialState = {
-  id?: number;
-  quantity?: number;
+  id: number;
+  quantity: number;
 }[];
 
 export type IPayload = {
@@ -10,5 +10,5 @@ export type IPayload = {
 
 export type IActionObj = {
   type: string;
-  payload?: IPayload;
+  id: number;
 };

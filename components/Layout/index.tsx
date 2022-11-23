@@ -1,5 +1,3 @@
-"use client";
-
 import { Container } from "@mui/material";
 import { Box } from "@mui/system";
 import * as React from "react";
@@ -7,7 +5,7 @@ import ReactQueryWrapper from "../contexts/ReactQueryWrapper";
 import { Footer } from "../Footer";
 import { Navbar } from "../Navbar";
 import MuiWrapper from "../contexts/MuiWrapper";
-import { BasketWrapper } from "../contexts/BasketWrapper";
+import BasketWrapper from "../contexts/BasketWrapper";
 
 export interface ILayoutProps {
   children: React.ReactNode;
@@ -15,9 +13,9 @@ export interface ILayoutProps {
 
 export function Layout(props: ILayoutProps) {
   return (
-    <ReactQueryWrapper>
-      <MuiWrapper>
-        <BasketWrapper>
+    <BasketWrapper>
+      <ReactQueryWrapper>
+        <MuiWrapper>
           <Box sx={{ backgroundColor: "background.default" }}>
             <Container
               sx={{
@@ -40,8 +38,8 @@ export function Layout(props: ILayoutProps) {
               </Box>
             </Container>
           </Box>{" "}
-        </BasketWrapper>
-      </MuiWrapper>
-    </ReactQueryWrapper>
+        </MuiWrapper>
+      </ReactQueryWrapper>
+    </BasketWrapper>
   );
 }

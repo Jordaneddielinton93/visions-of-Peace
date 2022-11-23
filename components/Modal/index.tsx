@@ -1,12 +1,9 @@
 import { Backdrop, CircularProgress, Fade, Typography } from "@mui/material";
 
-import { useQuery } from "@tanstack/react-query";
-
 import * as React from "react";
 
 import { Box } from "@mui/system";
 import Modal from "@mui/material/Modal";
-import useFetchDataByID from "../hooks/useFetchDataByID";
 
 const style = {
   position: "absolute" as "absolute",
@@ -46,10 +43,10 @@ export function ModalBasic({ handleClick, open }: IModalProps) {
         <Fade in={open.isOpen}>
           <Box sx={style}>
             <Typography id="transition-modal-title" variant="h6" component="h2">
-              {data.title}
+              {"data.title"}
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              {data.description}
+              {"data.description"}
             </Typography>
           </Box>
         </Fade>

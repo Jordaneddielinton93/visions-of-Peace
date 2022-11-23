@@ -148,22 +148,22 @@ export const gallarylist = [
 export const items = [
   {
     name: "Tigers eyes ",
-    description: "Probably the most random thing you have ever seen!",
+    description: " light weight & soft fabric",
     img: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
   },
   {
     name: "Citrines",
     img: "https://images.unsplash.com/photo-1495191712857-c3a9aa54f482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-    description: "Hello World!",
+    description: "breathable and comfortable",
   },
   {
     name: "Turquoises",
     img: "https://images.unsplash.com/photo-1495396310650-64841eacfa3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-    description: "goodbye World!",
+    description: "Peace & Meditation",
   },
   {
     name: "Sapphire",
     img: "https://images.unsplash.com/photo-1514646544754-9d1bbea5ccc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80",
-    description: "goodbye World!",
+    description: "Relaxation",
   },
 ];

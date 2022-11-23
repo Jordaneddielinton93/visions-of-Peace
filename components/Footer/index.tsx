@@ -8,7 +8,6 @@ import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
 export interface IFooterProps {}
 
 export function Footer(props: IFooterProps) {
-  console.log(silkpinkbgImg);
   return (
     <Box
       component={"footer"}
