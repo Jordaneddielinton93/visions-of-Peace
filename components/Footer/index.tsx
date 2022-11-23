@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import * as React from "react";
-import silkpinkbgImg from "../../public/images/footer/footerimg.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
+import { SilkBanner } from "../SilkBanner";
 
 export interface IFooterProps {}
 
@@ -33,50 +33,10 @@ export function Footer(props: IFooterProps) {
             top: "0",
           }}
         ></Box>
-        <Box
-          sx={{
-            position: "absolute",
-            bottom: "0",
-            left: "0%",
-            right: "0%",
-            margin: "auto",
-            height: "200px",
-            width: "95%",
-            backgroundImage: `url(${silkpinkbgImg.src})`,
-            backgroundSize: "cover",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              border: "solid thick",
-              borderColor: "primary.main",
-              width: "97%",
-              height: "85%",
-              padding: "10px",
-              textAlign: "center",
-              fontWeight: "400",
-              color: "white",
-              fontSize: {
-                xs: "0.6rem",
-                sm: "0.8rem",
-                md: "1rem",
-                lg: "1rem",
-              },
-            }}
-          >
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            rem sequi aliquam vitae facere odit praesentium, aut at labore
-            dolorum quae alias. Pariatur provident ipsa, hic error molestias
-            dolorem doloremque?
-          </Box>
-        </Box>
+        <SilkBanner
+          heading=""
+          text="We are dedicated to help you achieve a sense of well being for your body , soul and mind by providig a variety of health, beauty and mind services"
+        />
       </Box>
       <Box
         component={"section"}

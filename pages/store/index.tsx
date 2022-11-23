@@ -1,4 +1,3 @@
-"use client";
 import { Box } from "@mui/system";
 import Head from "next/head";
 import Carousel1 from "../../components/Carousel/Carousel1";

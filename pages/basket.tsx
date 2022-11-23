@@ -7,6 +7,9 @@ import { useQuery } from "@tanstack/react-query";
 import { BasketItem } from "../components/BasketItem/BasketItem";
 import matchAndMerg from "../components/functions/matchAndMerg";
 import Head from "next/head";
+import { BasketEmppty } from "../components/BasketEmpty";
+import { BackToStoreButton } from "../components/Buttons/BackToStore";
+import { Basket_Total } from "../components/Basket_Total";
 
 export interface IBasketProps {}
 
@@ -45,6 +48,15 @@ export default function Basket(props: IBasketProps) {
             <BasketItem key={props.key} {...props} setBasket={shouldTrigger} />
           );
         })}
+
+        {!basket_and_data_info.length ? <BasketEmppty /> : ""}
+        {basket_and_data_info && (
+          <Basket_Total
+            data={basket_and_data_info}
+            cartLength={basket_and_data_info.length}
+          />
+        )}
+        <BackToStoreButton />
       </Box>
     </Box>
   );

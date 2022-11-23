@@ -1,7 +1,7 @@
-import { Button } from "@mui/material";
 import { Box } from "@mui/system";
 import Head from "next/head";
-import Link from "next/link";
+
+import { BackToStoreButton } from "../../components/Buttons/BackToStore";
 import { Silkbg } from "../../components/Silkbg";
 import StoreImageDescription from "../../components/StoreImageDescription/StoreImageDescription";
 
@@ -56,21 +56,7 @@ export default function StoreItemPage(data: any) {
       />
 
       <Silkbg img={silkbg} top="-80px" left="" right="0px" />
-      <Link href={"/store"} style={{ margin: "60px 0", alignSelf: "center" }}>
-        <Button
-          color="secondary"
-          variant="contained"
-          sx={{
-            width: "180px",
-            height: "50px",
-            border: "solid thin ",
-            borderColor: "primary.main ",
-            zIndex: 10,
-          }}
-        >
-          Back To Store
-        </Button>
-      </Link>
+      <BackToStoreButton />
     </Box>
   );
 }

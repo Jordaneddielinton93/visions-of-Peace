@@ -1,7 +1,8 @@
 import { Box, Button, Stack } from "@mui/material";
 
 import DeleteIcon from "@mui/icons-material/Delete";
-import Link from "next/link";
+
+import StoreQuantityButton from "../Buttons/StoreQuantityButtons";
 
 export interface IBasketItemButtonsProps {
   quantity: number;
@@ -28,16 +29,7 @@ export function BasketItemButtons({
         width: "100%",
       }}
     >
-      <Stack direction="row" spacing={1}>
-        <Button variant="outlined" sx={{ width: "55px" }}>
-          {quantity}
-        </Button>
-        <Link href={`/store/${id}`}>
-          <Button variant="contained" sx={{ width: "100px" }}>
-            edit
-          </Button>
-        </Link>
-      </Stack>
+      <StoreQuantityButton id={id} />
 
       <Stack direction="row" spacing={1}>
         <Button variant="outlined" sx={{ width: "55px" }}>

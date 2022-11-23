@@ -7,9 +7,8 @@ import styles from "./styles.module.css";
 import Carousel from "react-material-ui-carousel";
 
 import { items } from "../../constants/constants";
-export interface ICarousel1Props {}
 
-function Carousel1(props: ICarousel1Props) {
+function Carousel1() {
   return (
     <Carousel>
       {items.map((item, i) => (

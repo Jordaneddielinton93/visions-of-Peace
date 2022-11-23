@@ -1,13 +1,13 @@
 import "@testing-library/jest-dom";
-import { fireEvent, render, screen } from "@testing-library/react";
-import { IActionObj, IinitialState } from "../../types/types";
-import basketReducer from "../basketReducer";
+// import { fireEvent, render, screen } from "@testing-library/react";
+import { IinitialState } from "../../types/types";
+// import basketReducer from "../basketReducer";
 let initialState: IinitialState = [];
-let initialStateFull: IinitialState = [
-  { id: 1, quantity: 2 },
-  { id: 2, quantity: 3 },
-  { id: 3, quantity: 4 },
-];
+// let initialStateFull: IinitialState = [
+//   { id: 1, quantity: 2 },
+//   { id: 2, quantity: 3 },
+//   { id: 3, quantity: 4 },
+// ];
 beforeEach(() => {
   initialState = [];
 });
