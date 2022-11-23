@@ -9,7 +9,7 @@ export let BasketContextWrapper = createContext<any>([]);
 
 export default function BasketWrapper({ children }: IBasketWrapperProps) {
   let [basket, setBasket] = useReducer<any>(basketReducer, initialState);
-  console.log(basket);
+
   return (
     <BasketContextWrapper.Provider value={{ basket, setBasket }}>
       {children}

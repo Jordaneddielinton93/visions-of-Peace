@@ -3,7 +3,6 @@ import { IActionObj, IinitialState } from "../types/types";
 export const initialState: IinitialState = [];
 
 export default function basketReducer(state: any, { type, id }: IActionObj) {
-  console.log(type);
   switch (type) {
     case "addOneToBasket":
       let stateAllreadyContainsId = state.some(({ id: ID }: any) => ID === id);
@@ -47,9 +46,8 @@ export default function basketReducer(state: any, { type, id }: IActionObj) {
       return state;
 
     case "removeItemFromBasket":
-      console.log("heeeree", id);
       let newState = [...state];
-      console.log(newState.filter((obj: any) => obj.id !== id));
+
       return newState.filter((obj: any) => obj.id !== id);
 
     case "removeAllFromBasket":

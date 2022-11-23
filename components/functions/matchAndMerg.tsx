@@ -1,5 +1,4 @@
 export default function matchAndMerg(Arr1: any, Arr2: any) {
-  console.log("does get hit");
   if (typeof Arr1 !== "object" || typeof Arr2 !== "object") {
     return [];
   }

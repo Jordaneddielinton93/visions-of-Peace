@@ -10,11 +10,11 @@ import silkbg from "../../public/images/home/silkbg.png";
 import fetchAllData from "../hooks/fetchAllData";
 import { CardSkeletons } from "../CardPurchase/Skeleton";
 import { useQuery } from "@tanstack/react-query";
+import Link from "next/link";
 export interface ICardPurchaseSectionProps {}
 
 export function CardPurchaseSection({}: ICardPurchaseSectionProps) {
   const { data, status } = useQuery(["store"], fetchAllData);
-  console.log(data, status, "heeerrree");
 
   return (
     <Box
@@ -47,22 +47,22 @@ export function CardPurchaseSection({}: ICardPurchaseSectionProps) {
           }}
         >
           {status === "success" ? (
-            (console.log("how"),
             data.map(
               ({ image, title, description, price, id }: any, index: any) => {
                 return (
                   index < 8 && (
-                    <CardPurchase
-                      img={image}
-                      key={title + index}
-                      title={title}
-                      text={description}
-                      price={price}
-                    />
+                    <Link href={`/store/${id}`} key={title + index}>
+                      <CardPurchase
+                        img={image}
+                        title={title}
+                        text={description}
+                        price={price}
+                      />
+                    </Link>
                   )
                 );
               }
-            ))
+            )
           ) : (
             <CardSkeletons />
           )}

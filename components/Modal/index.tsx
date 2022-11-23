@@ -23,7 +23,6 @@ export interface IModalProps {
 }
 
 export function ModalBasic({ handleClick, open }: IModalProps) {
-  console.log(open.id, "im in the modal");
   // const { data } = useFetchDataByID(open.id);
   // const { data, status } = useQuery(["store"], () => fetchDataById(open.id));
   // console.log(data);
