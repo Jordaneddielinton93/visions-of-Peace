@@ -39,7 +39,13 @@ export default function Basket_and_Navlinks() {
 
       setState({ ...state, [anchor]: open });
     };
-  let arrayOfavailablePages: any = ["Store", "Basket", "About", "Home"];
+  let arrayOfavailablePages: any = [
+    "Store",
+    "Basket",
+    "About",
+    "Home",
+    "Contact",
+  ];
   const list = (anchor: Anchor) => (
     <Box
       sx={{
