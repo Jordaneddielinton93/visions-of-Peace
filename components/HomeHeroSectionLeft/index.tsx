@@ -3,9 +3,7 @@ import * as React from "react";
 import { OrderNow } from "../Buttons/OrderNow";
 import { homePageHeading } from "../constants/constants";
 
-export interface IHomeHeroSectionLeftProps {}
-
-export function HomeHeroSectionLeft(props: IHomeHeroSectionLeftProps) {
+export function HomeHeroSectionLeft() {
   return (
     <Box
       sx={{

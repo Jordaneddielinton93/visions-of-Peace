@@ -15,6 +15,7 @@ import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import StoreIcon from "@mui/icons-material/Store";
 import Link from "next/link";
+import HomeIcon from "@mui/icons-material/Home";
 type Anchor = "top" | "left" | "bottom" | "right";
 
 export default function Basket_and_Navlinks() {
@@ -38,7 +39,7 @@ export default function Basket_and_Navlinks() {
 
       setState({ ...state, [anchor]: open });
     };
-  let arrayOfavailablePages: any = ["store", "basket", "about"];
+  let arrayOfavailablePages: any = ["Store", "Basket", "About", "Home"];
   const list = (anchor: Anchor) => (
     <Box
       sx={{
@@ -52,15 +53,30 @@ export default function Basket_and_Navlinks() {
     >
       <List>
         {[
-          { text: "account", icon: <AccountCircleIcon /> },
-          { text: "basket", icon: <LocalGroceryStoreIcon /> },
+          { text: "Account", icon: <AccountCircleIcon /> },
+          { text: "Basket", icon: <LocalGroceryStoreIcon /> },
         ].map(({ icon, text }, index) => {
           return arrayOfavailablePages.includes(text) ? (
-            <Link key={index} href={"/" + text}>
+            <Link
+              key={index}
+              href={"/" + text.toLowerCase()}
+              style={{ textDecoration: "none" }}
+            >
               <ListItem key={index} disablePadding>
                 <ListItemButton>
-                  <ListItemIcon>{icon}</ListItemIcon>
-                  <ListItemText primary={text} />
+                  <ListItemIcon
+                    sx={{
+                      color: "primary.main",
+                    }}
+                  >
+                    {icon}
+                  </ListItemIcon>
+                  <ListItemText
+                    primary={text}
+                    sx={{
+                      color: "primary.main",
+                    }}
+                  />
                 </ListItemButton>
               </ListItem>
             </Link>
@@ -69,7 +85,7 @@ export default function Basket_and_Navlinks() {
               key={index}
               disablePadding
               sx={{
-                textDecoration: "none",
+                textDecoration: "line-through",
                 color: "red",
                 cursor: "help",
               }}
@@ -92,18 +108,23 @@ export default function Basket_and_Navlinks() {
       <Divider />
       <List>
         {[
-          { text: "about", icon: <InfoIcon /> },
-          { text: "store", icon: <StoreIcon /> },
-          { text: "contact", icon: <ContactMailIcon /> },
-          { text: "faqs", icon: <LiveHelpIcon /> },
+          { text: "Home", icon: <HomeIcon /> },
+          { text: "Store", icon: <StoreIcon /> },
+          { text: "About", icon: <InfoIcon /> },
+
+          { text: "Contact", icon: <ContactMailIcon /> },
+          { text: "Faqs", icon: <LiveHelpIcon /> },
         ].map(({ icon, text }, index) => {
           return arrayOfavailablePages.includes(text) ? (
-            <Link key={index} href={"/" + text}>
+            <Link
+              key={index}
+              href={"/" + (text !== "Home" ? text.toLowerCase() : "")}
+              style={{ textDecoration: "none" }}
+            >
               <ListItem disablePadding>
                 <ListItemButton>
                   <ListItemIcon
                     sx={{
-                      textDecoration: "none",
                       color: "primary.main",
                     }}
                   >
@@ -125,6 +146,7 @@ export default function Basket_and_Navlinks() {
                 <ListItemIcon
                   sx={{
                     textDecoration: "none",
+
                     color: "red",
                   }}
                 >
@@ -132,7 +154,8 @@ export default function Basket_and_Navlinks() {
                 </ListItemIcon>
                 <ListItemText
                   sx={{
-                    textDecoration: "none",
+                    textDecoration: "line-through",
+
                     color: "red",
                   }}
                   primary={text}
