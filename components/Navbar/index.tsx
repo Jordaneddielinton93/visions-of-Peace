@@ -15,7 +15,8 @@ export function Navbar() {
         alignItems: "center",
         justifyContent: "space-evenly",
         padding: "0px 3px",
-        zIndex: 3,
+        zIndex: 20,
+        position: "relative",
       }}
     >
       <Logo_large />

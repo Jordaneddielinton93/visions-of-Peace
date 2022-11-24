@@ -5,9 +5,7 @@ import { CardPurchaseSection } from "../components/CardPurchaseSection";
 import { HomeWhySection } from "../components/HomeWhySection";
 import { WhyChooseMe } from "../components/WhyChooseMe";
 
-export interface IaboutProps {}
-
-export default function about(props: IaboutProps) {
+export default function about() {
   return (
     <Box>
       <Head>

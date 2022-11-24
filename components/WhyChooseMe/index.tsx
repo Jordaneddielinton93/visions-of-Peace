@@ -2,9 +2,8 @@ import { Box } from "@mui/material";
 import * as React from "react";
 import { whyChooseMe } from "../constants/constants";
 import { WhyChooseMeCard } from "../WhyChooseMeCard";
-export interface IWhyChooseMeProps {}
 
-export function WhyChooseMe(props: IWhyChooseMeProps) {
+export function WhyChooseMe() {
   return (
     <Box
       sx={{

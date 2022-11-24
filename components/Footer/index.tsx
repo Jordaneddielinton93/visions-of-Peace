@@ -16,7 +16,6 @@ export function Footer(props: IFooterProps) {
         flexDirection: "column",
         height: "700px",
         width: "100%",
-        backgroundColor: "background.default",
         alignItems: "center",
       }}
     >
@@ -31,6 +30,7 @@ export function Footer(props: IFooterProps) {
             width: "100%",
             backgroundColor: "background.paper",
             top: "0",
+            borderRadius: "20px",
           }}
         ></Box>
         <SilkBanner

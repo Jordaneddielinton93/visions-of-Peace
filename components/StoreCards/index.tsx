@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import * as React from "react";
 import { CardPurchase } from "../CardPurchase";
 import { useQuery } from "@tanstack/react-query";
-
 import fetchAllData from "../hooks/fetchAllData";
 import { Silkbg } from "../Silkbg";
 import silkbg2 from "../../public/images/home/silkbg2.png";
