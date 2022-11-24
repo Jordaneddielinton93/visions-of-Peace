@@ -54,7 +54,12 @@ export function CardSlideUp({ img }: any) {
             display: "flex",
             alignItems: "center",
             gap: "2em",
-            padding: " 2em",
+            padding: {
+              xs: " 30px 10px",
+              sm: " 30px",
+              md: " 30px",
+              lg: " 30px",
+            },
             borderRadius: "40px 0 0 0",
             backgroundColor: "#fff",
             transform: "translateY(-100%)",
@@ -66,7 +71,8 @@ export function CardSlideUp({ img }: any) {
           </svg>
           {/* thumbnail here */}
           <div className={styles.card__header_text}>
-            <h3 className={styles.card__title}>Jessica Parker</h3>
+            <h3 className={styles.card__title}>Ryan Maths</h3>
+            <h2 className={styles.card__title2}>Purchased</h2>
             <span className={styles.card__status}>1 hour ago</span>
           </div>
         </Box>
