@@ -2,9 +2,7 @@ import { Box } from "@mui/system";
 import { useContext } from "react";
 import { BasketContextWrapper } from "../contexts/BasketWrapper";
 
-export interface IBasketSvgProps {}
-
-export function BasketSvg(props: IBasketSvgProps) {
+export function BasketSvg() {
   let { basket } = useContext(BasketContextWrapper);
 
   return (

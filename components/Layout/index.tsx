@@ -6,7 +6,6 @@ import { Footer } from "../Footer";
 import { Navbar } from "../Navbar";
 import MuiWrapper from "../contexts/MuiWrapper";
 import BasketWrapper from "../contexts/BasketWrapper";
-import { FloatingSvg } from "../aniamtions/floatingSvg";
 
 export interface ILayoutProps {
   children: React.ReactNode;

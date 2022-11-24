@@ -5,9 +5,7 @@ import { Contact_Box } from "../components/Contact_Box";
 import silkbg from "../public/images/home/silkbg.png";
 import { Silkbg } from "../components/Silkbg";
 
-export interface IContactProps {}
-
-export default function Contact(props: IContactProps) {
+export default function Contact() {
   return (
     <Box bgcolor={"background"} position="relative">
       <Silkbg img={silkbg} top="170px" left="" right="0px" />
