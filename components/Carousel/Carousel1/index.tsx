@@ -10,7 +10,7 @@ import { items } from "../../constants/constants";
 
 function Carousel1() {
   return (
-    <Carousel>
+    <Carousel sx={{ background: "rgba(255, 255, 255,0.5)" }}>
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}
@@ -22,13 +22,13 @@ function Item(props: any) {
   return (
     <Paper
       sx={{
-        height: "400px",
+        height: "500px",
         background: "red",
         backgroundImage: `url(${props.item.img})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "start",
         alignItems: "center",
         flexDirection: "column",
       }}
@@ -39,6 +39,7 @@ function Item(props: any) {
         sx={{
           fontSize: "3rem",
           textShadow: "2px 2px white",
+          zIndex: 10,
         }}
       >
         {props.item.name}
@@ -50,8 +51,8 @@ function Item(props: any) {
       >
         {props.item.description}
       </Box>
-      <Box className={styles.gradient}></Box>
       <Box className={styles.gradient2}></Box>
+      {/* <Box className={styles.gradient}></Box> */}
     </Paper>
   );
 }

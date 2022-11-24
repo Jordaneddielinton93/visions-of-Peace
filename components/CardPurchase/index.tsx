@@ -6,6 +6,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import { Box, height } from "@mui/system";
 
 // or
 export interface ICardPurchaseProps {
@@ -35,10 +36,36 @@ export function CardPurchase({ img, title, text, price }: ICardPurchaseProps) {
           border: " inset 2px",
           borderColor: "gold",
         },
+        "&:hover var": {
+          height: "20px",
+          width: "20px",
+        },
       }}
     >
       <CardMedia component="img" height="140" image={img} alt="sapphire" />
-      <CardContent>
+      <Box
+        component={"var"}
+        sx={{
+          position: "absolute",
+          top: "0px",
+          zIndex: 12,
+          height: "80px",
+          width: "80px",
+          transition: "1s",
+          borderBottomRightRadius: "100%",
+          borderRight: "solid 4px ",
+          borderBottom: "solid 4px ",
+          borderColor: "primary.main",
+          background: "rgba(254,254,254,0.8)",
+        }}
+      ></Box>
+
+      <CardContent
+        sx={{
+          boxShadow:
+            "rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset",
+        }}
+      >
         <Typography
           gutterBottom
           variant="h5"

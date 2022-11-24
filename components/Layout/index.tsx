@@ -6,6 +6,7 @@ import { Footer } from "../Footer";
 import { Navbar } from "../Navbar";
 import MuiWrapper from "../contexts/MuiWrapper";
 import BasketWrapper from "../contexts/BasketWrapper";
+import { FloatingSvg } from "../aniamtions/floatingSvg";
 
 export interface ILayoutProps {
   children: React.ReactNode;
@@ -16,7 +17,8 @@ export function Layout(props: ILayoutProps) {
     <BasketWrapper>
       <ReactQueryWrapper>
         <MuiWrapper>
-          <Box sx={{ backgroundColor: "background.default" }}>
+          {" "}
+          <Box sx={{ backgroundColor: "background.default", zIndex: 2 }}>
             <Container
               sx={{
                 width: "100vw",
@@ -33,6 +35,7 @@ export function Layout(props: ILayoutProps) {
                 }}
               >
                 <Navbar />
+
                 {props.children}
                 <Footer />
               </Box>

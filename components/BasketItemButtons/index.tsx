@@ -12,7 +12,6 @@ export interface IBasketItemButtonsProps {
 }
 
 export function BasketItemButtons({
-  quantity,
   price,
   id,
   setBasket,

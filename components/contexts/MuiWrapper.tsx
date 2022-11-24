@@ -15,7 +15,7 @@ export default function MuiWrapper(props: ICreateMuiThemeProps) {
         main: "#855744",
       },
       background: {
-        default: "#F0EAE7",
+        default: "rgba(240, 234, 231,0.4);",
         paper: "white",
       },
     },

@@ -46,7 +46,7 @@ export function HomeHeroSection(props: IHomeHeroSectionProps) {
         <Box
           component={"span"}
           sx={{
-            zIndex: "2",
+            zIndex: "6",
             overflow: "hidden",
           }}
         >
