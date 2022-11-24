@@ -28,6 +28,7 @@ export function StoreCards({}: IStoreCardsProps) {
           lg: "0px 65px",
         },
         display: "flex",
+        justifyContent: "center",
         flexWrap: "wrap",
         gap: "40px 10px",
       }}
