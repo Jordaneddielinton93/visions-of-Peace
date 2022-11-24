@@ -15,6 +15,7 @@ export default function Logo_large(props: ILogo_largeProps) {
         justifyContent: "space-between",
         width: "173px",
         height: "36px",
+        zIndex: 10,
       }}
     >
       <Logo_small />

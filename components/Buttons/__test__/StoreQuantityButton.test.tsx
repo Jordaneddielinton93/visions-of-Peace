@@ -1,9 +1,9 @@
 import "@testing-library/jest-dom";
 import { render, screen, fireEvent } from "@testing-library/react";
-import React, { useEffect, useReducer } from "react";
+import React, { useReducer } from "react";
 
 import { BasketContextWrapper } from "../../contexts/BasketWrapper";
-import basketReducer, { initialState } from "../../reducers/basketReducer";
+import basketReducer from "../../reducers/basketReducer";
 
 import StoreQuantityButton from "../StoreQuantityButtons";
 
@@ -34,7 +34,7 @@ describe("intergration - testing quantity buttons", () => {
     expect(quantityNumb.textContent).toBe("2");
   });
 
-  it("should remove 1 to the quantity with the id of 2", async () => {
+  it("should remove 2 to the quantity with the id of 2", async () => {
     let initiState = [
       { id: 1, quantity: 2 },
       { id: 2, quantity: 3 },
@@ -54,7 +54,7 @@ describe("intergration - testing quantity buttons", () => {
     });
     expect(quantityNumb.textContent).toBe("1");
   });
-  it("should remove 1 to the quantity with the id of 2", async () => {
+  it("should remove 2 to the quantity with the id of 2", async () => {
     let initiState = [
       { id: 1, quantity: 2 },
       { id: 2, quantity: 3 },

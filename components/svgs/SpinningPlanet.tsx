@@ -19,9 +19,9 @@ export default function SpinningPlanet() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="33" cy="83" r="15" fill="#B979A7" />
+        <circle cx="33" cy="83" r="15" fill="#BA79A7" />
         <circle cx="356" cy="264" r="15" fill="#B979A7" />
-        <circle cx="187" cy="187" r="186" stroke="#BA79A7" strokeWidth="2" />
+        <circle cx="187" cy="187" r="186" stroke="#BA79A7" strokeWidth="3" />
         <circle cx="187" cy="187" r="158.5" fill="#F0EAE7" stroke="#855744" />
         <circle cx="187" cy="187" r="158.5" stroke="#855744" />
       </svg>

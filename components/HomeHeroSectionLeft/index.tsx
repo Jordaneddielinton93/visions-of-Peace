@@ -22,7 +22,9 @@ export function HomeHeroSectionLeft() {
               key={text}
               sx={{
                 fontSize: fontSize,
+                fontWeight: "800",
                 fontFamily: "IM Fell French Canon",
+
                 color: color,
               }}
               component={"span"}
