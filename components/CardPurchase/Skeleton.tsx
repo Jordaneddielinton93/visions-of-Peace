@@ -10,7 +10,6 @@ import * as React from "react";
 export function CardSkeletons({}) {
   return (
     <>
-      {" "}
       {Array(5)
         .fill("")
         .map((_, index) => (

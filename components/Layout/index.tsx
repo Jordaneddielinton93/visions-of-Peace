@@ -5,6 +5,7 @@ import ReactQueryWrapper from "../contexts/ReactQueryWrapper";
 import { Footer } from "../Footer";
 import { Navbar } from "../Navbar";
 import MuiWrapper from "../contexts/MuiWrapper";
+
 import BasketWrapper from "../contexts/BasketWrapper";
 
 export interface ILayoutProps {
@@ -17,18 +18,25 @@ export function Layout(props: ILayoutProps) {
       <ReactQueryWrapper>
         <MuiWrapper>
           {" "}
-          <Box sx={{ backgroundColor: "background.default", zIndex: 2 }}>
+          <Box
+            sx={{
+              background: "#F0EAE7",
+              backgroundImage: "url(/images/home/wavebg.jpeg)",
+              backgroundSize: "210%",
+              backgroundPosition: " center",
+              transition: "12s",
+            }}
+          >
             <Container
               sx={{
                 width: "100vw",
                 minHeight: "100vh",
-                backgroundColor: "background.default",
-                padding: { xs: "0%", sm: "0%", md: "20px", lg: "20px" },
+
+                padding: { xs: "0%", sm: "0%", md: "0px", lg: "0px" },
               }}
             >
               <Box
                 sx={{
-                  backgroundColor: "background.paper",
                   height: "100%",
                   width: "100%",
                 }}

@@ -2,10 +2,9 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import * as React from "react";
 import { HomeHeroSectionLeft } from "../HomeHeroSectionLeft";
-import { Silkbg } from "../Silkbg";
+
 import SpinningPlanet from "../svgs/SpinningPlanet";
 import angelImage from "../../public/images/home/heroimage.png";
-import silkbg from "../../public/images/home/silkbg.png";
 
 export interface IHomeHeroSectionProps {}
 
@@ -16,6 +15,7 @@ export function HomeHeroSection(props: IHomeHeroSectionProps) {
       sx={{
         height: { xs: "850px", sm: "450px", md: "450px", lg: "450px" },
         display: "flex",
+
         flexDirection: { xs: "column", sm: "row", md: "row", lg: "row" },
       }}
     >
@@ -54,12 +54,6 @@ export function HomeHeroSection(props: IHomeHeroSectionProps) {
         </Box>
 
         <SpinningPlanet />
-        <Silkbg
-          img={silkbg}
-          top={{ xs: "0px", sm: "-80px", md: "-80px", lg: "-80px" }}
-          left=""
-          right="0px"
-        />
       </Box>
     </Box>
   );

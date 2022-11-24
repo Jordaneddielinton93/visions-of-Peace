@@ -49,6 +49,7 @@ export default function SearchBar() {
         border: "none",
         color: "pink",
         margin: "0px 5px",
+        backgroundColor: "#faf2f6",
       }}
       renderInput={(params) => (
         <TextField

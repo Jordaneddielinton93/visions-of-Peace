@@ -10,7 +10,7 @@ import { WhyChooseMe } from "../components/WhyChooseMe";
 export interface IAppProps {}
 export default function Home() {
   return (
-    <Box bgcolor={"background"}>
+    <Box position="relative" zIndex={10}>
       <Head>
         <title>visions-of-peace:Home</title>
         <meta
