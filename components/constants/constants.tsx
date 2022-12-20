@@ -2,32 +2,32 @@ export const homePageHeading = [
   {
     text: "Bringing",
     color: "primary.main",
-    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "50px" },
+    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "65px" },
   },
   {
     text: "you",
     color: "secondary.main",
-    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "50px" },
+    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "65px" },
   },
   {
     text: "inner",
     color: "primary.main",
-    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "50px" },
+    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "65px" },
   },
   {
     text: "and",
     color: "primary.main",
-    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "50px" },
+    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "65px" },
   },
   {
     text: "outter",
     color: "secondary.main",
-    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "50px" },
+    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "65px" },
   },
   {
     text: "change",
     color: "primary.main",
-    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "50px" },
+    fontSize: { xs: "30px", sm: "30px", md: "50px", lg: "65px" },
   },
 ];
 

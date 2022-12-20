@@ -8,7 +8,7 @@ export function HomeHeroSectionLeft() {
     <Box
       sx={{
         height: "300px",
-        width: { xs: "300px", sm: "300px", md: "440px", lg: "440px" },
+        width: { xs: "300px", sm: "300px", md: "440px", lg: "550px" },
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",

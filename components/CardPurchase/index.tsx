@@ -15,7 +15,7 @@ export interface ICardPurchaseProps {
   text: string;
   price: number;
 }
-
+// test commit
 export function CardPurchase({ img, title, text, price }: ICardPurchaseProps) {
   return (
     <Card
